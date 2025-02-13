@@ -31,17 +31,78 @@ body {
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
+    animation: big 2s;
 }
-#header {
+.header {
     text-align: center;
     background: linear-gradient(to right, purple, rgb(0, 204, 255));
     margin: 0;
     padding: 20px;
+
+}
+#title {
+    animation: appear 6s infinite alternate linear; 
 }
 #img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 750px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 250px;
+    height: auto;
+}
+#anime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 250px;
+    height: auto;
+}
+#manga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 200px;
+    height: auto;
+}
+@keyframes big {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes appear {
+    0% {
+        color: #8e00b5;
+    }
+    20% {
+        color: #9e00c2;
+    }
+    40% {
+        color: #bf00ff;
+    }
+    60% {
+        color: #9900ff;
+    }
+    80% {
+        color: #6200ff;
+    }
+    100% {
+        color: #4c00ff;
+    }
 }
