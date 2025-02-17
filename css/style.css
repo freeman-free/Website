@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
-#container {
+.container {
     width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -31,7 +31,10 @@ body {
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
-    animation: big 2s;
+}
+#buttons button:hover {
+    background-color: #005b7f;
+    color: #fff;
 }
 .header {
     text-align: center;
@@ -42,11 +45,40 @@ body {
 }
 #title {
     animation: appear 6s infinite alternate linear; 
+    text-shadow: #005b7f 2px 2px;
 }
-#img {
+#click {
+    font-size: 20px;
+    animation: appear 6s infinite alternate linear; 
+    text-shadow: #005b7f 2px 2px;
+}
+.img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+.projectimg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+#mars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 400px;
+    height: auto;
+}
+#pixel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 400px;
+    height: auto;
 }
 #game {
     display: flex;
@@ -75,17 +107,16 @@ body {
     width: 200px;
     height: auto;
 }
-@keyframes big {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
+
+li {
+    margin-bottom: 10px;
+}
+
+
 @keyframes appear {
     0% {
         color: #8e00b5;
@@ -104,5 +135,10 @@ body {
     }
     100% {
         color: #4c00ff;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
     }
 }

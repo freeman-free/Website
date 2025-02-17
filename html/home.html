@@ -5,43 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
-<body>    
+<body> 
+     
     <div class="header">
-    <h1 id="title">
-        Welcom bij mijn website            
-    </h1>        
+         
+        <h1 id="title" onclick="veranderTitel()">Welkom bij mijn website</h1>
+        <p id="click" onclick="veranderTitel()">Click Hier</p> 
     </div>    
 
     <div id="buttons">
-        <button>Home</button>        
-        <button>Techniekenpagina</button>
-        <button>Interessepagina</button>
-        <button>Verbeterpuntenpagina</button>
+        <button onclick="location.href='home.html'">Home</button>        
+        <button onclick="location.href='Techniekenpagina.html'">Techniekenpagina</button>
+        <button onclick="location.href='Interessepagina.html'">Interessepagina</button>
+        <button onclick="location.href='Verbeterpuntenpagina.html'">Verbeterpuntenpagina</button>
     </div>
-    <div id="container">
+
+    <div class="container">
 
         <h1 id="over-mij">Over Mij</h1>
-            <p>mijn naam is Bryan ik ben een student op het Grafisch Lyceum Rotterdam. Ik heb het opleiding creative software developer gekozen als mijn opleiding</p>
+        <p>mijn naam is Bryan ik ben een student op het Grafisch Lyceum Rotterdam. Ik heb het opleiding creative software developer gekozen als mijn opleiding</p>
+
         <h1>Hobby's</h1>
-            <p>Mijn hobby's zijn gamen, Anime kijken en manga lezen. Ik speel vooral games zoals Vampire surviver en 7DS Grandcross. ik kijk meestal action, slice of life en adventure animes en dit is hetzelfde voor manga lezen.</p>
-            <div id="img">
+        <p>Mijn hobby's zijn gamen, Anime kijken en manga lezen. Ik speel vooral games zoals Vampire surviver en 7DS Grandcross. ik kijk meestal action, slice of life en adventure animes en dit is hetzelfde voor manga lezen.</p>
+
+        <div class="img">
             <img id="game" src="../photo/Vampire_Survivors_key_art.jpg" alt="">
             <img id="anime" src="../photo/ex3x5xre9ta91.webp" alt="">            
             <img id="manga" src="../photo/one-piece-vol-105.jpg" alt="">
-            </div>
+        </div>
+
                 <h1>Mijn Projecten</h1>
-                <p>Ik heb op GLR 2 projecten gemaakt en daar komt nog 1 erbij maar dit zijn de 2 projecten die ik al heb gemaakt:</p>
-                <div>
+                <p>Ik heb op GLR 2 projecten gemaakt en daar komt nog 1 erbij maar dit zijn de 2 projecten die ik al heb gemaakt</p>
+
+            <div class="projectimg">
                 <h2>Museum de Pixel</h2> 
-                <h2>Mission to Mars</h2>
-                <img src="" alt="">
-                <img src="" alt="">
-                <button>Go to</button>
-                <button>Go to</button>
-                </div>
-
-
+                <h2>Mission to Mars</h2>                    
+                <img id="mars" src="../photo/Screenshot 2025-02-17 234300.png" alt="">
+                <img id="pixel" src="../photo/Screenshot 2025-02-17 234406.png" alt="">  
+                <button onclick="location.href='https://101727.stu.sd-lab.nl/Archive/museum-de-pixel.html'">Go to</button>
+                <button onclick="location.href='https://101727.stu.sd-lab.nl/Mission-to-mars/html/Homepage.html'">Go to</button>                                  
+            </div>
+            <br>
+    <footer>
+        E-mail: bryan2010023@gmail.com
+        <br> 
+        Nummer: +31 6 84887481 
+        <br>
+        <button onclick="toonBericht()">Klik voor een verrassing!</button>
+    </footer>            
     </div>
+
 </body>
 </html>
