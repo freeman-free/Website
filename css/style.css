@@ -1,26 +1,28 @@
-@font-face {
-    font-family: Delius;
-    src: url(Delius-Regular.ttf);
-}
 body {
-    background-color: #1400ca;
-    font-family: Delius;
+    background-color: #0b0069;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 .container {
     width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #00215a;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 15px;}
+    border-radius: 15px;
+    text-shadow: #000000 2px 2px;
+}
 #buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     padding: 10px;
     margin: 20px;
+}
+button {
+    cursor: pointer;
 }
 #buttons button {
     padding: 10px;
@@ -44,13 +46,14 @@ body {
 
 }
 #title {
-    animation: appear 6s infinite alternate linear; 
+    animation: appear 2s infinite alternate linear; 
     text-shadow: #005b7f 2px 2px;
 }
 #click {
     font-size: 20px;
     animation: appear 6s infinite alternate linear; 
     text-shadow: #005b7f 2px 2px;
+        cursor: pointer;
 }
 .img {
     display: grid;
